@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            tools:text="Title of the Article"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        <ImageView
+                android:id="@+id/avatarImageView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                tools:background="@color/conduit_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"/>
+
+
+
+            <TextView
+                    android:id="@+id/authorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_marginLeft="10px"
+                    tools:text="username"
+                    app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+                    app:layout_constraintTop_toBottomOf="@id/titleTextView"/>
+
+            <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    tools:text="December 15, 2020"
+                    app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+                    app:layout_constraintTop_toBottomOf="@id/authorTextView"/>
+
+
+    <TextView
+            android:id="@+id/bodyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:layout_marginTop="5px"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error ad deser Sunt error"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateTextView"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
